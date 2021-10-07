@@ -196,15 +196,20 @@ body {
   padding: 2rem;
   -webkit-box-shadow: 1rem 1rem 2rem #12151d, -1rem -1rem 2rem #12151d;
           box-shadow: 1rem 1rem 2rem #12151d, -1rem -1rem 2rem #12151d;
-  -webkit-transition: -webkit-box-shadow 0.5s;
-  transition: -webkit-box-shadow 0.5s;
-  transition: box-shadow 0.5s;
-  transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;
+  -webkit-transition: background-color 0.5s, -webkit-box-shadow 0.5s;
+  transition: background-color 0.5s, -webkit-box-shadow 0.5s;
+  transition: box-shadow 0.5s, background-color 0.5s;
+  transition: box-shadow 0.5s, background-color 0.5s, -webkit-box-shadow 0.5s;
 }
 
 .customer:hover {
   -webkit-box-shadow: 2rem 2rem 3rem #12151d, -2rem -2rem 3rem #12151d;
           box-shadow: 2rem 2rem 3rem #12151d, -2rem -2rem 3rem #12151d;
+  background-color: #222;
+  -webkit-transition: background-color 0.5s, -webkit-box-shadow 0.5s;
+  transition: background-color 0.5s, -webkit-box-shadow 0.5s;
+  transition: box-shadow 0.5s, background-color 0.5s;
+  transition: box-shadow 0.5s, background-color 0.5s, -webkit-box-shadow 0.5s;
 }
 
 .customer:first-child {
