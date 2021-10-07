@@ -294,11 +294,15 @@ body {
 
 .team-member {
   width: 35rem;
-  background-color: 292D3E;
+  background-color: #292D3E;
   padding: 1rem;
   -webkit-box-shadow: 1rem 1rem 2rem #12151d, -1rem -1rem 2rem #12151d;
           box-shadow: 1rem 1rem 2rem #12151d, -1rem -1rem 2rem #12151d;
   position: relative;
+  -webkit-transition: background-color 0.5s, -webkit-box-shadow 0.5s;
+  transition: background-color 0.5s, -webkit-box-shadow 0.5s;
+  transition: box-shadow 0.5s, background-color 0.5s;
+  transition: box-shadow 0.5s, background-color 0.5s, -webkit-box-shadow 0.5s;
 }
 
 .team-member:hover {
@@ -453,5 +457,98 @@ body {
   color: #1B1E2B;
   letter-spacing: 0.1rem;
   text-indent: 2rem;
+}
+
+.section-4 {
+  width: 100%;
+  height: 130vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-container {
+  width: 80%;
+  height: 40%;
+  background-color: #292D3E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-shadow: 0.3rem 0.3rem 0.4rem #12151d, -0.3rem -0.3rem 0.4rem #12151d;
+          box-shadow: 0.3rem 0.3rem 0.4rem #12151d, -0.3rem -0.3rem 0.4rem #12151d;
+  border-radius: 0.5rem;
+}
+
+.form-img {
+  width: 55rem;
+  padding: 5rem;
+  opacity: 0.8;
+}
+
+.contact-form {
+  width: 40rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 3rem;
+  border-radius: 0.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  border: none;
+  border-radius: 2rem;
+}
+
+.contact-form textarea {
+  max-height: 15rem;
+  min-height: 10rem;
+  max-width: 100%;
+  min-width: 70%;
+}
+
+.contact-form input[type="submit"] {
+  background-color: #FF4D00;
+  color: white;
+  font-weight: bolder;
+  letter-spacing: 0.5rem;
+  cursor: pointer;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+
+.contact-form input[type="submit"]:hover {
+  background-color: #ff2600;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+
+.copyright {
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  margin-top: 5rem;
 }
 /*# sourceMappingURL=style.css.map */
