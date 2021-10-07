@@ -13,6 +13,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -376,7 +377,7 @@ body {
 
 .form-container {
     width: 80%;
-    height: 40%;
+    height: 40;
     background-color: #292D3E;
     display: flex;
     align-items: center;
@@ -437,3 +438,168 @@ body {
 }
 
 //section - 4
+
+.scroll-up-btn {
+    width: 5rem;
+    height: 5rem;
+    background-color: #FF4D00;
+    position: fixed;
+    bottom: 5rem;
+    right: 5rem;
+    font-size: 1.6rem;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.5s;
+}
+
+.scroll-up-btn:hover {
+    background-color: #ff2600;
+}
+
+// RWD
+@media (max-width: 1400px) {
+    .floating-bg {
+        top: -120vw;
+    }
+
+    .section-1-heading {
+        width: 85rem;
+        font-size: 6rem;
+    }
+
+    .navbar-link {
+        font-size: 2rem;
+    }
+
+    .section-heading {
+        margin-bottom: 10rem;
+    }
+
+    .section-2 {
+        height: auto;
+    }
+
+    .customers-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .customer {
+        margin: 5rem 10rem;
+    }
+
+    .section-3 {
+        height: auto;
+    }
+
+    .section-4 {
+        height: auto;
+    }
+
+    .team-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .team-member {
+        margin: 5rem 10rem;
+    }
+
+    .form-container {
+        height: 40%;
+    }
+
+    .form-img {
+        width: 40rem;
+    }
+}
+
+@media (max-width: 1150px) {
+    .floating-bg {
+        top: -110vw;
+    }
+}
+
+@media (max-width: 950px) {
+    .floating-bg {
+        top: -100vw;
+    }
+
+    .form-img {
+        width: 35rem;
+    }
+
+    .section-1-heading {
+        top: 25vw;
+    }
+
+    .navbar {
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 800px) {
+    .form-container {
+        justify-content: center;
+    }
+
+    .form-img {
+        display: none;
+    }
+}
+
+@media (max-width: 750px) {
+    .section-1-heading {
+        width: 50rem;
+        font-size: 5rem;
+    }
+
+    .section-heading {
+        font-size: 6rem;
+        margin-bottom: 5rem;
+    }
+
+    .floating-bg {
+        top: -90vw;
+    }
+
+    .copyright {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 550px) {
+    html {
+        font-size: 50%;
+    }
+
+    .floating-bg {
+        top: -70vw;
+    }
+
+    .section-1-heading {
+        width: 40rem;
+        font-size: 4rem;
+        top: 35vw;
+    }
+
+    .customer {
+        margin: 5rem 0;
+    }
+
+    .team-member {
+        margin: 5rem 0;
+    }
+
+    .section-heading {
+        margin-bottom: 2rem;
+    }
+
+    .form-container {
+        background-color: transparent;
+        box-shadow: none;
+    }
+}
+
+// RWD

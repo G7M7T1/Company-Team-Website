@@ -8,6 +8,8 @@ ScrollReveal().reveal(".team-member.card-1", { delay: 200, duration: 1000 });
 ScrollReveal().reveal(".team-member.card-2", { delay: 250, duration: 1000 });
 ScrollReveal().reveal(".team-member.card-3", { delay: 300, duration: 1000 });
 
+ScrollReveal().reveal(".form-container", { delay: 300, duration: 1000 });
+
 document.querySelectorAll(".story-btn").forEach((btn) => {
   btn.addEventListener("click", (e) => {
     btn.classList.toggle("change");
